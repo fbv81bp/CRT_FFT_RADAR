@@ -1,11 +1,11 @@
+The highest peak on the X axis denotes the origin of the wave system.
+
 Images were created in GNU Octave with the following commands:
 ```
 crt(1577, [11,12,13,14,15],2)
 
 crt_conv(1577, [11,12,13,14,15],2)
 ```
-### Documentation tbc'd...
-
 The idea of a Chinese Remainder Theorem based Continuous Wave RADAR is that one may compute the distance by the incoming phases of several carriers, without precisely, measuring their travelling time. Only the phase difference between source and endpoints are needed.
 
 The problem with CRT is when the remainder is around zero, then if it flips to the maximum due to measurement error, it gives perfectly false results. Besides it is for natural numbers only.
