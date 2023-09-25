@@ -20,11 +20,11 @@ Within the distance specified by CRT ie. the multiple of all wavelengths, this i
 
 This code computes the distance of an object similarly to the Chinese Remainder Theorem yet with spatial Fourier Transfroms from the phases of possibly reflected radio signals. It works with real numbers, not just with relative prime naturals.
 
-## CONCEPT
+## Concept
 
 Calculating the best distance guess can be thought of as in interference problem: if the received signals were sent out with the respective phase delays that were measure, then the interference would be the strongest at the original reflection point. This can be simulated by Fourier transforming such signals, that only have a non-zero values where offset plus the wavelength plus-minus the measurements' imprecisions determine it. Then adding up such Fourier transforms and calculating the inverse Fourier transform, yields the highest peak at the original point where phases were aligned: in this very siimple proof of concept I calculated with the traced object being the source of radio signals, and all signals were sent out with phase 0. Summing up the Fourier series is a solution, because of superposition.
 
-## POSSIBLE IMPROVEMENTS
+## Possible improvements
 
 - the non-zero values in the saptial functions (variable 'a') could be replaced by the measurements actual error distribution, which may give more exact results
 - there are most of time multiple spikes at the same highest maximum, yet the widest one seems to be the correct guess
